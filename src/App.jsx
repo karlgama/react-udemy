@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 
+import ParImpar from './components/condicional/ParImpar'
 import Familia from './components/basics/Familia'
 import FamiliaMembro from './components/basics/FamiliaMembro'
 import Card from './components/layout/Card'
@@ -20,6 +21,10 @@ export default _ => (
         
         <div className="cards">
 
+            <Card title="#08 - Renderização condicional" color="#3a9aa9">
+              <ParImpar numero={20}></ParImpar>
+            </Card>
+            
             <Card title="#7 - Repetição" color="#3a9ad9">
               <TabelaProdutos></TabelaProdutos>
             </Card>

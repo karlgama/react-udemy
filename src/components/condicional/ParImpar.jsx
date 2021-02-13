@@ -8,8 +8,6 @@ export default props=>{
             {
                 isPar ? <span>Par</span> : <span>Ímpar</span>
             }
-            <span>Par</span>
-            <span>Ímpar</span>
         </div>
     )
 }

@@ -1,6 +1,9 @@
 import React from 'react'
 import './App.css'
 
+import Input from './components/formulario/Input'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 import ParImpar from './components/condicional/ParImpar'
 import Familia from './components/basics/Familia'
 import FamiliaMembro from './components/basics/FamiliaMembro'
@@ -21,8 +24,17 @@ export default _ => (
         
         <div className="cards">
 
+            <Card title="#10 - Componente controlado" color="#3abad9">
+                <Input></Input>
+            </Card>
+
+            <Card title="#09 - Comunicação indireta" color="#3abaa9">
+                <IndiretaPai></IndiretaPai>
+            </Card>
+
             <Card title="#08 - Renderização condicional" color="#3a9aa9">
               <ParImpar numero={20}></ParImpar>
+              <UsuarioInfo usuario={{ nome: 'kaique'}}></UsuarioInfo>
             </Card>
             
             <Card title="#7 - Repetição" color="#3a9ad9">
